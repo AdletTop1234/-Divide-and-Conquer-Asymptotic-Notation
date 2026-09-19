@@ -22,7 +22,7 @@ public class mergeSort {
         merge(arr, temp, left, mid, right)
     }
 
-    public static void merge(int[] arr,int[] temp,int left,int mid,int right){
+    private static void merge(int[] arr,int[] temp,int left,int mid,int right){
         for(int i = left, i <= right, i++){
             temp[i] = arr[i];
         }
@@ -43,7 +43,16 @@ public class mergeSort {
         }
     }
 
-    public static void insertionSort{
+    private static void insertionSort(int[] arr,int left,int right){
+        for(int i = left + 1,i <= right,i++){
+            key = arr[i];
+            j = i - 1;
+        }
 
+        while (j >= left && arr[j] > key){
+            arr[j + 1] == arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
     }
 }
